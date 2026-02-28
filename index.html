@@ -3,103 +3,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>PORTFOLIO | Digital Studio</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
+    <!-- Fonts similar to Dash Digital -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="logo">JINO.</div>
-        <ul class="nav-links">
-            <li><a href="#work">Work</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Noise Texture Overlay -->
+    <div class="noise"></div>
+
+    <!-- Navigation -->
+    <nav class="nav-bar">
+        <div class="logo">PORTFOLIO.</div>
+        <div class="nav-right">
+            <a href="#work" class="nav-link">WORK</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+            <a href="#contact" class="nav-link">CONTACT</a>
+        </div>
     </nav>
 
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Hero Section -->
     <header class="hero">
-        <div class="container">
-            <h1 class="fade-in">JINO GUINANG</h1>
-            <p class="subtitle fade-in">3D Modeller, AutoCAD and Revit.</p>
+        <div class="hero-text">
+            <h1 class="reveal">
+                <span class="line">DIGITAL</span>
+                <span class="line">EXPERIENCES</span>
+                <span class="line">& BRANDING</span>
+            </h1>
+        </div>
+        <div class="hero-bottom">
+            <p class="reveal">Creative Developer & Designer based in New York.</p>
+            <div class="scroll-indicator">
+                <span>SCROLL</span>
+                <div class="line"></div>
+            </div>
         </div>
     </header>
 
-    <section id="work" class="work-section">
-        <div class="container">
-            <h2 class="section-title">Selected Work</h2>
-            <div class="project-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="card-image" style="background-color: #333;"></div>
-                    <div class="card-info">
-                        <h3>Project Alpha</h3>
-                        <p>Web Development</p>
+    <!-- Marquee Section -->
+    <div class="marquee">
+        <div class="marquee-inner">
+            <span>WEB DEVELOPMENT — UI/UX DESIGN — BRANDING — WEBFLOW — CREATIVE DIRECTION — </span>
+            <span>WEB DEVELOPMENT — UI/UX DESIGN — BRANDING — WEBFLOW — CREATIVE DIRECTION — </span>
+            <span>WEB DEVELOPMENT — UI/UX DESIGN — BRANDING — WEBFLOW — CREATIVE DIRECTION — </span>
+            <span>WEB DEVELOPMENT — UI/UX DESIGN — BRANDING — WEBFLOW — CREATIVE DIRECTION — </span>
+        </div>
+    </div>
+
+    <!-- Work Section -->
+    <section id="work" class="work">
+        <div class="section-header">
+            <span class="number">01</span>
+            <h2>SELECTED WORK</h2>
+        </div>
+        
+        <div class="projects-grid">
+            <a href="#" class="project-card">
+                <div class="project-image">
+                    <div class="project-overlay">
+                        <i class="ph ph-arrow-up-right"></i>
                     </div>
                 </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="card-image" style="background-color: #444;"></div>
-                    <div class="card-info">
-                        <h3>Neon Brand</h3>
-                        <p>Branding</p>
+                <div class="project-info">
+                    <h3>FINCORE</h3>
+                    <p>Web Development / 2023</p>
+                </div>
+            </a>
+
+            <a href="#" class="project-card offset">
+                <div class="project-image" #1 style="background:a1a1a;">
+                    <div class="project-overlay">
+                        <i class="ph ph-arrow-up-right"></i>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="card-image" style="background-color: #555;"></div>
-                    <div class="card-info">
-                        <h3>Fintech App</h3>
-                        <p>UI/UX Design</p>
+                <div class="project-info">
+                    <h3>NEON LABS</h3>
+                    <p>Branding / 2023</p>
+                </div>
+            </a>
+
+            <a href="#" class="project-card">
+                <div class="project-image" style="background: #222;">
+                    <div class="project-overlay">
+                        <i class="ph ph-arrow-up-right"></i>
                     </div>
                 </div>
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="card-image" style="background-color: #222;"></div>
-                    <div class="card-info">
-                        <h3>Art Direction</h3>
-                        <p>Photography</p>
+                <div class="project-info">
+                    <h3>ARTISTRY</h3>
+                    <p>UI/UX Design / 2022</p>
+                </div>
+            </a>
+
+            <a href="#" class="project-card offset">
+                <div class="project-image" style="background: #151515;">
+                    <div class="project-overlay">
+                        <i class="ph ph-arrow-up-right"></i>
                     </div>
                 </div>
+                <div class="project-info">
+                    <h3>VELOCITY</h3>
+                    <p>Development / 2022</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- About / Services -->
+    <section id="about" class="about">
+        <div class="section-header">
+            <span class="number">02</span>
+            <h2>OUR SERVICES</h2>
+        </div>
+
+        <div class="services-list">
+            <div class="service-row">
+                <span class="service-num">01</span>
+                <h3 class="service-title">Web Development</h3>
+                <p class="service-desc">Building fast, responsive websites with modern technologies.</p>
+            </div>
+            <div class="service-row">
+                <span class="service-num">02</span>
+                <h3 class="service-title">UI/UX Design</h3>
+                <p class="service-desc">Creating intuitive and beautiful user experiences.</p>
+            </div>
+            <div class="service-row">
+                <span class="service-num">03</span>
+                <h3 class="service-title">Brand Identity</h3>
+                <p class="service-desc">Defining brands that stand out in the digital space.</p>
+            </div>
+            <div class="service-row">
+                <span class="service-num">04</span>
+                <h3 class="service-title">Creative Direction</h3>
+                <p class="service-desc">Guiding creative projects from concept to execution.</p>
             </div>
         </div>
     </section>
 
-    <section id="about" class="about-section">
-        <div class="container">
-            <h2 class="section-title">Services</h2>
-            <div class="services-list">
-                <div class="service-item">
-                    <span>01</span>
-                    <h3>Web Development</h3>
-                </div>
-                <div class="service-item">
-                    <span>02</span>
-                    <h3>UI/UX Design</h3>
-                </div>
-                <div class="service-item">
-                    <span>03</span>
-                    <h3>Brand Identity</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer id="contact">
-        <div class="container">
-            <h2>Let's work together.</h2>
-            <a href="mailto:hello@example.com" class="email-link">hello@studio.com</a>
-            <div class="footer-bottom">
-                <p>&copy; 2026.</p>
-                <div class="socials">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">LinkedIn</a>
-                </div>
+        <div class="footer-header">
+            <span class="number">03</span>
+            <h2>LET'S TALK</h2>
+        </div>
+        
+        <a href="mailto:hello@portfolio.com" class="footer-email">hello@portfolio.com</a>
+
+        <div class="footer-bottom">
+            <div class="footer-links">
+                <a href="#">INSTAGRAM</a>
+                <a href="#">TWITTER</a>
+                <a href="#">LINKEDIN</a>
             </div>
+            <p>© 2024 PORTFOLIO STUDIO</p>
         </div>
     </footer>
 
